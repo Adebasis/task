@@ -17,8 +17,9 @@ class CreateCustomersTable extends Migration
             $table->increments('id');
             $table->string('firstName');
             $table->string('lastName');
+            $table->integer('location_id');
             $table->timestamps();
-            $table->index('id');
+            $table->index('location_id');
         });
     }
 
